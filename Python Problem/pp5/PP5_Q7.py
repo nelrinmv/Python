@@ -1,0 +1,1 @@
+#  only one freiend details will be shown 
