@@ -1,0 +1,1 @@
+#  the Answer is that s = {} tells that the s is a type of dictionary
