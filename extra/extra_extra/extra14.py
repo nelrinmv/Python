@@ -1,9 +1,9 @@
 student = {
-    "name": "Rahul",
-    "Math": 88,
-    "Science": 92,
-    "English": 76,
-    "Computer": 95
+    "name" : "Rahul",
+    "Math" : 88,
+    "Science" : 92,
+    "English" : 76,
+    "Computer" : 95
 }
 
 print("Highest marks:", max(student["English"],student["Computer"],student["Math"],student["Science"]))
