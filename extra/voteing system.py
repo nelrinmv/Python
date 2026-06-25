@@ -28,7 +28,7 @@ else:
 if "Python" in votelistv1:
     print("Python in the votes")
     print("No of Python in code: ", votelistv1.count("Python"))
-    if votelistv1.count("Python") > votelistv1.count(uniquelangset[0:len(uniquelangset)]):
+    if votelistv1.count("Python") > votelistv1.count(votelistv1):
         print("Python won the votes")
 else:
     print("Python Did not won ")
