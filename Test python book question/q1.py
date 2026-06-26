@@ -62,3 +62,7 @@ for x in ['Sunny','Monty']:
     print('Hi "{} !"'.format(x)) #Output: Hi Sunny! <new line> Hi Monty!
 
 # Q1.18
+print('{0:3d},{2:6.1f},{1:4d}'.format(1,2,3.0)) #Output:'  1,   3.0,   2'
+
+# Q1.19
+print('{0:3},{1:5},{2:6}'.format('Hello1','Bye2',3))
