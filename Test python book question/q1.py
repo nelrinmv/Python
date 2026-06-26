@@ -25,14 +25,14 @@ x1 = int(input("Enter an integer number ")) #Input: 23
 print(x1) #Output:The value entered by the user here 23
 
 # Q1.8
-x = input() #Input: 12
-x1 = int(input('Enter an integer number')) # input: 23
+# x = input() #Input: 12
+# x1 = int(input('Enter an integer number')) # input: 23
 # print(x1 + x) #Output: Error
-
+# 
 # Q1.9
-val = int(input('Enter a floating value: ')) #input: 23.7
+# val = int(input('Enter a floating value: ')) #input: 23.7
 # Output : Error
-
+# 
 # Q1.10
 int1 = float(input('Enter a floating value: ')) #input: 23
 print(int1) #Output: 23.0
@@ -60,11 +60,18 @@ print('{0:9.3f}'.format(9.1011)) #Output: 9.101
 # Q1.17
 for x in ['Sunny','Monty']:
     print('Hi "{} !"'.format(x)) #Output: Hi Sunny! <new line> Hi Monty!
-
+# 
 # Q1.18
 print('{0:3d},{2:6.1f},{1:4d}'.format(1,2,3.0)) #Output:'  1,   3.0,   2'
-
+# 
 # Q1.19
 print('{0:3},{1:5},{2:6}'.format('Hello1','Bye2',3)) #Output: Hello1, Bye2,     3
 
 # Q1.20
+count = {
+    'Unit':1,
+    'Tenth':10,
+    'Hundedth':100
+}
+for key, value in count.items():
+    print('{0:10} ==> {1:10d}'.format(key,value)) #Output: Unit       ==>          1<newline>Tenth      ==>         10<newline>Hundedth   ==>        100
