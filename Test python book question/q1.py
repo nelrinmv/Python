@@ -52,7 +52,7 @@ print('{0:.3f}'.format(5.7416)) #Output: 5.742
 print('{0:.6f}'.format(5.9456)) #Output: 5.945600
 
 # Q1.15
-print('{4:.3f}'.format(8.2496)) #Output: Error
+# print('{4:.3f}'.format(8.2496)) #Output: Error
 
 # Q1.16
 print('{0:9.3f}'.format(9.1011)) #Output: 9.101
@@ -65,4 +65,6 @@ for x in ['Sunny','Monty']:
 print('{0:3d},{2:6.1f},{1:4d}'.format(1,2,3.0)) #Output:'  1,   3.0,   2'
 
 # Q1.19
-print('{0:3},{1:5},{2:6}'.format('Hello1','Bye2',3))
+print('{0:3},{1:5},{2:6}'.format('Hello1','Bye2',3)) #Output: Hello1, Bye2,     3
+
+# Q1.20
