@@ -40,4 +40,25 @@ print(int1) #Output: 23.0
 # Q1.11
 import string
 for i in range(5):
-    print(repr(i).rjust(5))
+    print(repr(i).rjust(5)) #Output: 0 1 2 3 4 in seprate lines
+
+# Q1.12
+"12".zfill(5) #Output: 00012
+
+# Q1.13
+print('{0:.3f}'.format(5.7416)) #Output: 5.742
+
+# Q1.14
+print('{0:.6f}'.format(5.9456)) #Output: 5.945600
+
+# Q1.15
+print('{4:.3f}'.format(8.2496)) #Output: Error
+
+# Q1.16
+print('{0:9.3f}'.format(9.1011)) #Output: 9.101
+
+# Q1.17
+for x in ['Sunny','Monty']:
+    print('Hi "{} !"'.format(x)) #Output: Hi Sunny! <new line> Hi Monty!
+
+# Q1.18
