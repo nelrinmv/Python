@@ -22,14 +22,28 @@ print("[3] Display All Contacts")
 user_click = input("Type a number and press Enter: ")
 
 if user_click == "1":
-    print("Process started.")
+    contactsearch = input("Enter the contact that you want to search: ")
+
+    if any(name in contactsearch for name in contacts):
+        print("The contact number of " + contactsearch + " is: " + str(contacts[contactsearch]))
+    else:
+        print("Contact not found.")
 elif user_click == "2":
-    print("Process started.")
+    print("Process starting...")
+
+    contactupdatekey = input("Enter the contact that you want to update: ")
+    contactupdatevalue = int(input("Enter the contact no. "))
+    contacts.update({contactupdatekey:contactupdatevalue})
+    print(contacts)
 elif user_click == "3":
     print("The Contacts stored are: ", sorted(contacts))
-    usersearchcontact = input("Type the Name of the person whose contact you want to know: ")
-    if usersearchcontact == contacts.items(usersearchcontact) :
-        print(contacts.get(usersearchcontact))
+    
+    # print("Enter the contact that you want to search:")
+    contactsearch = input("Enter the contact name whose idendtity you want to know: ")
+    
+    if any(name in contactsearch for name in contacts):
+        print("The contact number of " + contactsearch + " is: " + str(contacts[contactsearch]))
     else:
-        print("Contact does not exist or typing Error.")
-        
+        print("Contact not found.")
+else:
+    print("Contact not found.")

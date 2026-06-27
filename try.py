@@ -10,6 +10,10 @@ print("[1] Menu list")
 print("[2] Search list")
 print("[3] Update list")
 
+inputlist= input("enter the new number: ")
+
+print(dict[inputlist])
+
 userchoose = input("Please choose ur number selection for further information: ")
 if userchoose == "1":
     print(sorted(dict))
