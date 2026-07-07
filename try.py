@@ -1,28 +1,12 @@
-dict = {
-    "Item1" : 75924125412,
-    "Item2" : 97464125412,
-    "Item3" : 97433125412,
-    "Item4" : 86733125412,
-    "Item5" : 97433125352
-}
+import os
 
-print("[1] Menu list")
-print("[2] Search list")
-print("[3] Update list")
+# Create a file
+with open("demo.txt", "w") as f:
+    f.write("Hello!")
 
-inputlist= input("enter the new number: ")
+print("File created!")
 
-print(dict[inputlist])
+# Delete the file
+os.remove("demo.txt")
 
-userchoose = input("Please choose ur number selection for further information: ")
-if userchoose == "1":
-    print(sorted(dict))
-    contactsearch = input("Enter the contact name whose idendtity you want to know: ")
-elif userchoose ==  "2":
-    print("Enter the contact that you want to search:")
-    contactsearch = input("Enter the contact name whose idendtity you want to know: ")
-elif userchoose == "3":
-    print("Enter the contact that you want to edit:")
-    input()
-else:
-    print("!!ERROR!! Option Not available in the selection Menu. !!ERROR!!")
+print("File deleted!")
