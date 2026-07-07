@@ -23,3 +23,5 @@ elif userinput == "Gun" and computerinput == "Water":
     print("Player lost the round.")
 else:
     print("The input by the user does not match the option available")
+
+end = input()
