@@ -1,0 +1,3 @@
+print ('Overall Average: {0:.0f}%'.format(75.2876))
+
+# Output :  Overall Average: 75%
