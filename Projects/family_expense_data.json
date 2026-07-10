@@ -1,0 +1,60 @@
+{
+  "name": "Family Expense Tracker",
+  "members": [
+    {
+      "id": "d2028d3c-65a6-4c86-9f09-887e38b2a9ea",
+      "name": "Nelrin",
+      "profile_photo": null,
+      "wallet": {
+        "current_balance": 0.0,
+        "total_added": 0.0,
+        "total_spent": 0.0,
+        "history": []
+      }
+    }
+  ],
+  "expenses": [],
+  "categories": [
+    "Grocery",
+    "Vegetables",
+    "Fruits",
+    "Milk",
+    "Medicines",
+    "Fuel",
+    "Electricity",
+    "Water Bill",
+    "Gas",
+    "Internet",
+    "Mobile Recharge",
+    "Rent",
+    "Shopping",
+    "Clothes",
+    "Electronics",
+    "Home Appliances",
+    "Furniture",
+    "School",
+    "College",
+    "Fees",
+    "Books",
+    "Entertainment",
+    "Travel",
+    "Eating Out",
+    "Gifts",
+    "Healthcare",
+    "Repairs",
+    "Investments",
+    "Pets",
+    "Charity",
+    "Miscellaneous"
+  ],
+  "payment_methods": [
+    "Cash",
+    "UPI",
+    "Credit Card",
+    "Debit Card",
+    "Net Banking",
+    "Wallet",
+    "Cheque",
+    "Other"
+  ]
+}
