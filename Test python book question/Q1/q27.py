@@ -1,0 +1,3 @@
+print('The {0} of 20 is {:x}'.format("hexadecimal",20))
+
+# Output :  Error
