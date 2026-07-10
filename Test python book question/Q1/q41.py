@@ -1,3 +1,3 @@
-print('SyntaxError'
+# print('SyntaxError'
 
 # Output : ERROR
