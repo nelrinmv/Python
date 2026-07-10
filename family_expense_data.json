@@ -1,18 +1,6 @@
 {
   "name": "Family Expense Tracker",
-  "members": [
-    {
-      "id": "d2028d3c-65a6-4c86-9f09-887e38b2a9ea",
-      "name": "Nelrin",
-      "profile_photo": null,
-      "wallet": {
-        "current_balance": 0.0,
-        "total_added": 0.0,
-        "total_spent": 0.0,
-        "history": []
-      }
-    }
-  ],
+  "members": [],
   "expenses": [],
   "categories": [
     "Grocery",
