@@ -33,7 +33,6 @@ print("Temp in Faranhite = " , (celcius_int*9/5)+32)
 x = int(input("Enter your favorite number: "))
 print("The square of your favorite number is ", x ** 2)
 
-
 # Q6.
 name = input("Enter your name: ")
 age = int(input("Enter your age: "))
@@ -60,10 +59,10 @@ print(a,b)
 import math
 radius = int(input("Enter the radius: "))
 area = math.pi * (radius**2)
-print("Area of circle is:",round(area))
+print("Area of circle is:",round(area,2))
 
 perimeter = math.pi * radius * 2
-print("Circumference of circle is:", perimeter)
+print("Circumference of circle is:", round(perimeter,2))
 
 # Q10.
 user_input = float(input("Enter a number with decimal: "))
@@ -86,4 +85,6 @@ print("The average marks of the student is:", round(avg_marks, 2))
 # Q13.
 user_input = input("Enter a string: ")
 string_length = len(user_input)
+even = string_length % 2 == 0
 print("The length of the string is:", string_length)
+print("Is the length even?", even)
