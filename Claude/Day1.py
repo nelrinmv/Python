@@ -88,3 +88,39 @@ string_length = len(user_input)
 even = string_length % 2 == 0
 print("The length of the string is:", string_length)
 print("Is the length even?", even)
+
+# Q14.
+user_input_time = int(input("Enter time in seconds: "))
+time_in_hours = user_input_time // 3600
+remaining_seconds_after_hours = user_input_time % 3600
+time_in_minutes = remaining_seconds_after_hours // 60
+remaining_seconds = remaining_seconds_after_hours % 60
+print("Time is:", time_in_hours, "hours,", time_in_minutes, "min,", remaining_seconds, "sec.")
+
+# Q15.
+fourdigit_number = int(input("Enter a four digit number: "))
+lastdigit = fourdigit_number % 10
+second_lastdigit = (fourdigit_number // 10) % 10
+third_lastdigit = (fourdigit_number // 100) % 10
+firstdigit = fourdigit_number // 1000
+print("The sum of the digits is:", lastdigit + second_lastdigit + third_lastdigit + firstdigit)
+
+# Q16.
+userinput = input("Enter a Number: ")
+rev_number = userinput[::-1]
+print("The reversed number is:", rev_number)
+
+# Q17.
+dis_km = float(input("Enter the distance in kilometer: "))
+time_hrs = float(input("Enter the time in hours: "))
+speed = dis_km/time_hrs
+print("The speed of the vehical is", round(speed,2),"km/hrs")
+
+time_to_cover_double_in_hrs = (2 * dis_km)/ speed
+time_to_cover_double_in_min = time_to_cover_double_in_hrs * 60
+print("The time take to cover double the distance with the same speed in minute is",time_to_cover_double_in_min,"min.")
+
+# Q18.
+string_input = input("Enter a tuple in format(name,age,branch): ")
+name,age,branch = string_input.split(",")
+print(f"My name is {name}, I am {age} years old. My branch is {branch}.")
