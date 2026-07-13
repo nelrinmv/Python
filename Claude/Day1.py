@@ -124,3 +124,15 @@ print("The time take to cover double the distance with the same speed in minute 
 string_input = input("Enter a tuple in format(name,age,branch): ")
 name,age,branch = string_input.split(",")
 print(f"My name is {name}, I am {age} years old. My branch is {branch}.")
+
+# Q19.
+User_input_money = float(input("Enter the amount of money: "))
+no_of_500_notes = User_input_money // 500
+print(f"No of 500 Rs notes {int(no_of_500_notes)}")
+
+# Q20.
+user_input_time = input("Enter a time in format(hh:mm:ss): ")
+hh,mm,ss = user_input_time.split(":")
+hrs_in_sec = int(hh) * 60 * 60
+min_in_sec = int(mm) * 60
+print("Total time spent in second:", (hrs_in_sec+min_in_sec+int(ss)))
