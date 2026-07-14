@@ -1,0 +1,67 @@
+# Q1.
+num1 = int(input("Enter the first number: "))
+num2 = int(input("Enter the second number: "))
+num1_greater_num2 = num1 > num2
+print(f"Is the first number greater than the second number? {num1_greater_num2}")
+
+# Q2.
+num = int(input("Enter the first number: "))
+num_even = num % 2 == 0
+print(f"Is the number even? {num_even}")
+
+# Q3.
+num1 = int(input("Enter a number: "))
+num2 = int(input("Enter a number: "))
+num3 = int(input("Enter a number: "))
+
+all_equal = num1 == num2 and num2 == num3
+print(f"Are all three numbers equal? {all_equal}")
+
+# Q4.
+user_input = int(input("Enter a Number: "))
+check_for_3_divisiblity = user_input % 3 == 0
+check_for_5_divisiblity = user_input % 5 == 0
+check_both_divisiblity = check_for_3_divisiblity and check_for_5_divisiblity
+print("Is the number entered by the user divisible by both 3 and 5?",check_both_divisiblity)
+
+# Q5. 
+user_age = int(input("Enter your age: "))
+teenager_check = 13 <= user_age <= 19 
+print(f"Is the user teenager? {teenager_check}") 
+
+# Q6.
+num1 = int(input("Enter a number: "))
+num2 = int(input("Enter a number: "))
+print("The operator == is applied between them true/false?",num1 == num2)
+print("The operator != is applied between them true/false?",num1 != num2)
+print("The operator > is applied between them true/false?",num1 > num2)
+print("The operator < is applied between them true/false?",num1 < num2)
+print("The operator >= is applied between them true/false?",num1 >= num2)
+print("The operator <= is applied between them true/false?",num1 <= num2)
+
+# Q7.
+year = int(input("Enter a year: "))
+leap_year = year % 4 == 0
+check_divisiblity_with_100 = year % 100 == 0 
+check_divisiblity_with_400 = year % 400 == 0
+
+condition = leap_year and (not check_divisiblity_with_100 or check_divisiblity_with_400)
+
+print("The year is a leap year and is not divisible by 100 and 400. True or False?", condition)
+
+# Q8.
+number_input = int(input("Enter a number: "))
+number_input += 15
+print("The Final result is",number_input)
+
+# Q9.
+user_input = input("Please enter a string: ")
+len_string = len(user_input) > 10
+print(f"Is the length of string greater than 10? {len_string}")
+
+# Q10.
+user_marks = int(input("Enter your marks out of 100: "))
+pass_conditon = user_marks >= 40
+print("Have the user passed the exam?",pass_conditon)
+distinction_conditon = user_marks >= 75
+print("Have the user achived distinction in the exam?",distinction_conditon)
