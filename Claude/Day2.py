@@ -89,3 +89,45 @@ password = input("Enter your password: ")
 
 conditions = username == "admin" and password == "1234"
 print("The boolean Check for username and password is", conditions)
+
+# Q14.
+side1 = int(input("Enter the length of side of triange: "))
+side2 = int(input("Enter the length of side of triange: "))
+side3 = int(input("Enter the length of side of triange: "))
+condition = side1 + side2 > side3 and side2 + side3 > side1 and side1 + side3 > side2
+print("The boolean check for the triangle is", condition)
+
+# Q15.
+user_input = int(input("Enter a number: "))
+condition = [(user_input % 2 == 0), (user_input % 3 == 0), (user_input % 5 == 0)]
+print("The boolean check for the divisiblity of 2 is", condition[0])
+print("The boolean check for the divisiblity of 3 is", condition[1])
+print("The boolean check for the divisiblity of 5 is", condition[2])
+
+# Q16.
+number1 = int(input("Enter a number: "))
+number2 = int(input("Enter a number: "))
+condition = (number1 > 0 and number2 < 0) or (number1 < 0 and number2 > 0)
+print("The boolean check for the condition is", condition)
+
+# Q17.
+fourdigit_number = int(input("Enter a four digit number: "))
+lastdigit = fourdigit_number % 10
+second_lastdigit = (fourdigit_number // 10) % 10
+third_lastdigit = (fourdigit_number // 100) % 10
+firstdigit = fourdigit_number // 1000
+sum_of_digits =  lastdigit + second_lastdigit + third_lastdigit + firstdigit
+condition = sum_of_digits % 3 == 0
+print("The boolean check for the sum of the digits of the four digit number is divisible by 3 is", condition)
+
+# Q18.
+user_input_time = input("Enter a time in format(hh:mm:ss): ")
+hh,mm,ss = user_input_time.split(":")
+hh = int(hh)
+mm = int(mm)
+ss = int(ss)
+hrs_in_sec = hh * 60 * 60
+min_in_sec = mm * 60
+total_time_in_sec = hrs_in_sec + min_in_sec + ss
+condition = total_time_in_sec > 43200
+print("The boolean check for the time entered by the user is greater than half day is", condition)
