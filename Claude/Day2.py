@@ -65,3 +65,27 @@ pass_conditon = user_marks >= 40
 print("Have the user passed the exam?",pass_conditon)
 distinction_conditon = user_marks >= 75
 print("Have the user achived distinction in the exam?",distinction_conditon)
+
+# Q11.
+User_input = int(input("Enter a number: "))
+condition = User_input % 7 == 0 and not User_input % 2 == 0
+print("The number is divisibe by 7 and not 2?",condition)
+
+# Q12.
+number1 = int(input("Enter a number: "))
+number2 = int(input("Enter a number: "))
+
+is_compare = number1 is number2
+print("Is case:",is_compare)
+equal_compare = number1 == number2
+print("Equal case:",equal_compare)
+# == asks: "do these have the same value?"
+# is asks: "are these literally the same object in memory?"
+# It is because in case of small integers it memory can by same to save some space while for large integers it keep it seprate for efficency. 
+
+# Q13.
+username = input("Enter your user name: ")
+password = input("Enter your password: ")
+
+conditions = username == "admin" and password == "1234"
+print("The boolean Check for username and password is", conditions)
