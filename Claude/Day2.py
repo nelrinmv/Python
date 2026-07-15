@@ -131,3 +131,19 @@ min_in_sec = mm * 60
 total_time_in_sec = hrs_in_sec + min_in_sec + ss
 condition = total_time_in_sec > 43200
 print("The boolean check for the time entered by the user is greater than half day is", condition)
+
+# Q19.
+temp_celsius = float(input("Enter the temperature in Celsius: "))
+temp_fahrenheit = (temp_celsius * 9/5) + 32
+condition = 60 <= temp_fahrenheit <= 80
+print("The boolean check for the temperature in Fahrenheit is in the room temperature range is", condition)
+
+# Q20.
+subject1_marks = float(input("Enter the marks of subject 1: "))
+subject2_marks = float(input("Enter the marks of subject 2: "))
+subject3_marks = float(input("Enter the marks of subject 3: "))
+
+avg_marks = (subject1_marks + subject2_marks + subject3_marks) / 3
+avg_marks = round(avg_marks, 2)
+condition = avg_marks >= 75 and subject1_marks >= 33 and subject2_marks >= 33 and subject3_marks >= 33
+print("The boolean check for the student passed the exam and achieved distinction is", condition)
