@@ -40,3 +40,58 @@ if character_input == "a" or character_input == "e" or character_input == "i" or
 else :
     print("The character is a consonant.")
 
+# Q6.
+user_marks = int(input("Enter your marks: "))
+if user_marks >= 90:
+    print("Grade: A")
+elif user_marks >= 75:
+    print("Grade: B")
+elif user_marks >= 50:
+    print("Grade: C")
+else:
+    print("Grade: F")
+
+# Q7.
+year_input = int(input("Enter a year: "))
+if year_input % 4 == 0:
+    print(f"The year {year_input} is a leap year.")
+else:
+    print(f"The year {year_input} is not a leap year.")
+
+# Q8.
+side_length1 = float(input("Enter the length of 1st side: "))
+side_length2 = float(input("Enter the length of 2nd side: "))
+side_length3 = float(input("Enter the length of 3rd side: "))
+
+condition = side_length1 + side_length2 > side_length3 and side_length2 + side_length3 > side_length1 and side_length1 + side_length3 > side_length2
+equ_condition = side_length2 == side_length1 == side_length3
+iso_condition = (side_length1 == side_length2 != side_length3) or (side_length1 == side_length3 != side_length2) or (side_length3 == side_length2 != side_length1)
+
+if condition and equ_condition:
+    print("Yes the triangle exsists and it is a type of equilateral triangle.")
+elif condition and iso_condition:
+    print("Yes the triangle exsists and it is a type of isoscales triangle.")
+elif condition :
+    print("Yes the triangle exsists and it is a type of scales triangle.")
+else:
+    print("The triangle does not exsists.")
+
+# Q9.
+number_input = int(input("Enter a number: "))
+if number_input % 15 == 0:
+    print("FizzBuzz")
+elif number_input % 3 == 0:
+    print("Fizz")
+elif number_input % 5 == 0:
+    print("Buzz")
+else:
+    print("Just number",number_input)
+
+# Q10.
+username = input("Enter your user name: ")
+password = input("Enter your password: ")
+
+if  username == "admin" and password == "1234":
+    print("Login Successful")
+else:
+    print("Login Failed")
