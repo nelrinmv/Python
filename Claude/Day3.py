@@ -52,11 +52,16 @@ else:
     print("Grade: F")
 
 # Q7.
-year_input = int(input("Enter a year: "))
-if year_input % 4 == 0:
-    print(f"The year {year_input} is a leap year.")
+year = int(input("Enter a year: "))
+leap_year = year % 4 == 0
+check_divisiblity_with_100 = year % 100 == 0 
+check_divisiblity_with_400 = year % 400 == 0
+condition = leap_year and (not check_divisiblity_with_100 or check_divisiblity_with_400)
+
+if condition == True:
+    print(f"The year {year} is a leap year.")
 else:
-    print(f"The year {year_input} is not a leap year.")
+    print(f"The year {year} is not a leap year.")
 
 # Q8.
 side_length1 = float(input("Enter the length of 1st side: "))
